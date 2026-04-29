@@ -132,14 +132,15 @@
 
     .nav-links {
       display: flex;
-      gap: 36px;
+      gap: 24px;
       list-style: none;
+      align-items: center;
     }
 
     .nav-links a {
       color: var(--grey);
       text-decoration: none;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 500;
       letter-spacing: 0.05em;
       text-transform: uppercase;
@@ -1209,8 +1210,7 @@
       color: var(--grey);
     }
 
-    /* Remove heavy decorative blocks and keep real mockups */
-    #brand,
+    /* Remove heavy decorative mock dashboard blocks */
     .ui-showcase {
       display: none;
     }
@@ -1717,10 +1717,12 @@
       <span class="nav-wordmark">Urbeh</span>
     </div>
     <ul class="nav-links">
+      <li><a href="#billboard">Billboard</a></li>
+      <li><a href="#screenshots">App</a></li>
       <li><a href="#product">Product</a></li>
-      <li><a href="#business">Model</a></li>
-      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#ecosystem">Ecosystem</a></li>
       <li><a href="#brand">Brand</a></li>
+      <li><a href="#cta">Start</a></li>
     </ul>
     <button class="nav-cta" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Start Free
       Trial</button>
@@ -1777,7 +1779,7 @@
 
   <div class="divider"></div>
 
-  <section style="padding:0;position:relative;">
+  <section id="billboard" style="padding:0;position:relative;">
     <img src="billboard-mock-up.png" alt="Urbeh billboard" style="width:100%;height:auto;display:block;opacity:0.94;">
   </section>
 
